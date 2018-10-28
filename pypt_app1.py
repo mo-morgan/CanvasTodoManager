@@ -50,19 +50,30 @@ class App(QDialog):
                                     "border-style: solid;"
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
-                                    "border-color: rgba(255, 204, 153,30);")
+                                    "border-image: url(FFCC99.png);")
         self.comboBox.setStyleSheet("margin: 10px; padding: 16%;"
                                     "background-color: rgb(255, 255, 255);"
                                     "color: rgba(0,0,0,1);"
                                     "border-style: solid;"
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
-                                    "border-color: rgba(255, 204, 153,30);")
+                                    "border-image: url(FFCC99.png);")
         self.setLayout(layout)
 
     def createStyle(self):
+<<<<<<< HEAD
         self.setStyleSheet("border-image: url(leaf.jpg) 0 0 0 0 stretch stretch;"
                            "margin: 1px; padding: 7px;"
+=======
+<<<<<<< HEAD
+        self.setStyleSheet("border-image: url(flower.jpg);"
+                           "margin: 1px; padding: 7px;"
+=======
+        self.setStyleSheet("margin: 1px; padding: 7px;"
+                           "background-color: rgba(255, 204, 153,0.8);"
+                           "color: rgba(0,0,0,100);"
+>>>>>>> e6893384a4de66afd857b509212fee70d470978e
+>>>>>>> 52c0ff602dec89bf214b6cd4e0297e7c5bac6344
                            "border-style: solid;"
                            "border-radius: 3px; "
                            "border-width: 0.5px;"

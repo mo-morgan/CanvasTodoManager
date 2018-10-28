@@ -45,7 +45,7 @@ class LoginDialog (QtWidgets.QDialog):
         self.setLayout(layout)
 
     def check(self):
-        if str(self.accessToken.text()) == "123":  # do actual login check
+        if str(self.accessToken.text()) == Auth._token:  # do actual login check
             self.accept()
         else:
             pass  # or inform the user about bad username/password
@@ -82,8 +82,8 @@ class App(QDialog):
 
         # Combobox for course selection
         self.comboBox = QComboBox()
-        self.comboBox.addItem("Course 1")
-        self.comboBox.addItem("Course 2")
+        for key in self.course_dict:
+            self.comboBox.addItem(key.name)
 
         # checkBox for each assignment
         self.checkBox = QCheckBox('Assignment 1', self)
@@ -135,6 +135,9 @@ class App(QDialog):
                            "border-width: 0.5px;"
                            "border-color: rgba(255, 204, 153,30);")
         return name, token
+
+    def course_dict(self):
+        return self.course_dict
 
     @staticmethod
     def parse(self):
