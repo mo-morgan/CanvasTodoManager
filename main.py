@@ -63,6 +63,8 @@ class App(QDialog):
         self.height = 700
         self.course_dict = {}
 
+        self.comboBox = QComboBox()
+
         self.initUI()
 
     def initUI(self):
@@ -77,30 +79,60 @@ class App(QDialog):
 
         self.show()
 
+    def removeCheckBoxes(self):
+        for cnt in reversed(range(self.layout.count())):
+            # takeAt does both the jobs of itemAt and removeWidget
+            # namely it removes an item and returns it
+            widget = self.layout.takeAt(cnt).widget()
+
+            if widget is not self.comboBox:
+                # widget will be None if the item is a layout
+                widget.deleteLater()
+
+    def handleActivated(self, index):
+        self.removeCheckBoxes()
+
+        course_name = self.comboBox.itemText(index)
+        assignments = self.course_dict[course_name]
+
+        self.layout.addWidget(self.comboBox)
+
+        self.addAssignments(assignments)
+
+        self.setLayout(self.layout)
+
+    def addAssignments(self, assignments):
+        for assignment in assignments:
+            # checkBox for each assignment
+            print(assignment._name)
+            self.checkBox = QCheckBox(assignment._name + "      Due: " + assignment._dueDate.strftime("%Y-%m-%d %H:%M:%S"), self)
+            self.layout.addRow(self.checkBox)
+            self.checkBox.stateChanged.connect(self.clickBox)
+            self.checkBox.setStyleSheet("margin: 3px; padding: 30%;"
+                                        "background-color: rgb(255, 255, 255);"
+                                        "color: rgba(0,0,0,1);"
+                                        "border-style: solid;"
+                                        "border-radius: 3px; "
+                                        "border-width: 0.5px;"
+                                        "border-image: url(FFCC99.png);")
+
     def createLayout(self):
-        layout = QFormLayout()
+        self.layout = QFormLayout()
 
         # Combobox for course selection
-        self.comboBox = QComboBox()
+        i = 0
         for key in self.course_dict:
-            self.comboBox.addItem(key.name)
+            self.comboBox.addItem(key, i)
+            i = i + 1
 
-        # checkBox for each assignment
-        self.checkBox = QCheckBox('Assignment 1', self)
-        self.checkBox.stateChanged.connect(self.clickBox)
+        self.comboBox.activated.connect(self.handleActivated)
 
         # adding combo and check to layout
-        layout.addWidget(self.comboBox)
-        layout.addRow(self.checkBox)
+        self.layout.addWidget(self.comboBox)
+        course_name = self.comboBox.itemText(0)
+        self.addAssignments(self.course_dict[course_name])
 
         # set style of assignment checkboxes
-        self.checkBox.setStyleSheet("margin: 3px; padding: 30%;"
-                                    "background-color: rgb(255, 255, 255);"
-                                    "color: rgba(0,0,0,1);"
-                                    "border-style: solid;"
-                                    "border-radius: 3px; "
-                                    "border-width: 0.5px;"
-                                    "border-image: url(FFCC99.png);")
         self.comboBox.setStyleSheet("margin: 10px; padding: 16%;"
                                     "background-color: rgb(255, 255, 255);"
                                     "color: rgba(0,0,0,1);"
@@ -108,7 +140,7 @@ class App(QDialog):
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
                                     "border-image: url(FFCC99.png);")
-        self.setLayout(layout)
+        self.setLayout(self.layout)
 
     def createStyle(self):
         self.setStyleSheet("margin: 1px; padding: 7px;"
@@ -134,7 +166,10 @@ class App(QDialog):
                            "border-radius: 3px; "
                            "border-width: 0.5px;"
                            "border-color: rgba(255, 204, 153,30);")
-        return name, token
+        if okPressed and token != '':
+            return name, token
+        else:
+            sys.exit(-1)
 
     def course_dict(self):
         return self.course_dict
@@ -172,7 +207,7 @@ class App(QDialog):
                 print(assignment.name())
                 print(assignment.due_date())
 
-            self.course_dict[course] = allSorted
+            self.course_dict[course.name] = allSorted
 
 
 
