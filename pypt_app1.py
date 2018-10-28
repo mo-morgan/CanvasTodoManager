@@ -1,6 +1,7 @@
 import sys
 from PyQt5.QtWidgets import *
 
+
 class App(QDialog):
 
     def __init__(self):
@@ -79,7 +80,6 @@ class App(QDialog):
             return name, token
         else:
             sys.exit(-1)
-
 
 
 if __name__ == '__main__':

@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 import sys
+import os
+import dotenv
 from canvasapi import Canvas
 from datetime import datetime, timedelta
-
-from PyQt5 import QtGui, QtCore, QtWidgets
+from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import *
 
 
@@ -63,15 +64,13 @@ class App(QDialog):
         self.height = 800
         self.course_dict = {}
 
-        self.comboBox = QComboBox()
-
         self.initUI()
 
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
-        Auth._name, Auth._token = self.getInfo()
+        Auth._name = self.getInfo()
         App.parse(self)
 
         self.createStyle()
@@ -79,60 +78,30 @@ class App(QDialog):
 
         self.show()
 
-    def removeCheckBoxes(self):
-        for cnt in reversed(range(self.layout.count())):
-            # takeAt does both the jobs of itemAt and removeWidget
-            # namely it removes an item and returns it
-            widget = self.layout.takeAt(cnt).widget()
-
-            if widget is not self.comboBox:
-                # widget will be None if the item is a layout
-                widget.deleteLater()
-
-    def handleActivated(self, index):
-        self.removeCheckBoxes()
-
-        course_name = self.comboBox.itemText(index)
-        assignments = self.course_dict[course_name]
-
-        self.layout.addWidget(self.comboBox)
-
-        self.addAssignments(assignments)
-
-        self.setLayout(self.layout)
-
-    def addAssignments(self, assignments):
-        for assignment in assignments:
-            # checkBox for each assignment
-            print(assignment._name)
-            self.checkBox = QCheckBox(assignment._name + "      Due: " + assignment._dueDate.strftime("%Y-%m-%d %H:%M:%S"), self)
-            self.layout.addRow(self.checkBox)
-            self.checkBox.stateChanged.connect(self.clickBox)
-            self.checkBox.setStyleSheet("margin: 3px; padding: 30%;"
-                                        "background-color: rgb(255, 255, 255);"
-                                        "color: rgba(0,0,0,1);"
-                                        "border-style: solid;"
-                                        "border-radius: 3px; "
-                                        "border-width: 0.5px;"
-                                        "border-image: url(FFCC99.png);")
-
     def createLayout(self):
-        self.layout = QFormLayout()
+        layout = QFormLayout()
 
         # Combobox for course selection
-        i = 0
+        self.comboBox = QComboBox()
         for key in self.course_dict:
-            self.comboBox.addItem(key, i)
-            i = i + 1
+            self.comboBox.addItem(key.name)
 
-        self.comboBox.activated.connect(self.handleActivated)
+        # checkBox for each assignment
+        self.checkBox = QCheckBox('Assignment 1', self)
+        self.checkBox.stateChanged.connect(self.clickBox)
 
         # adding combo and check to layout
-        self.layout.addWidget(self.comboBox)
-        course_name = self.comboBox.itemText(0)
-        self.addAssignments(self.course_dict[course_name])
+        layout.addWidget(self.comboBox)
+        layout.addRow(self.checkBox)
 
         # set style of assignment checkboxes
+        self.checkBox.setStyleSheet("margin: 3px; padding: 30%;"
+                                    "background-color: rgb(255, 255, 255);"
+                                    "color: rgba(0,0,0,1);"
+                                    "border-style: solid;"
+                                    "border-radius: 3px; "
+                                    "border-width: 0.5px;"
+                                    "border-image: url(FFCC99.png);")
         self.comboBox.setStyleSheet("margin: 10px; padding: 16%;"
                                     "background-color: rgb(255, 255, 255);"
                                     "color: rgba(0,0,0,1);"
@@ -140,7 +109,7 @@ class App(QDialog):
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
                                     "border-image: url(FFCC99.png);")
-        self.setLayout(self.layout)
+        self.setLayout(layout)
 
     def createStyle(self):
         self.setStyleSheet("margin: 1px; padding: 7px;"
@@ -156,9 +125,9 @@ class App(QDialog):
 
     def getInfo(self):
         name, okPressed = QInputDialog.getText(self, "User Login", "Your name:", QLineEdit.Normal, "")
-        token, okPressed = QInputDialog.getText(self, "Access Token", "Enter access token:", QLineEdit.Normal, "")
-        if okPressed and token != '':
-            print(token)
+        # token, okPressed = QInputDialog.getText(self, "Access Token", "Enter access token:", QLineEdit.Normal, "")
+        if okPressed != '':
+            print(name)
         self.setStyleSheet("margin: 1px; padding: 7px;"
                            "background-color: rgba(255, 204, 153,0.8);"
                            "color: rgba(0,0,0,100);"
@@ -166,21 +135,20 @@ class App(QDialog):
                            "border-radius: 3px; "
                            "border-width: 0.5px;"
                            "border-color: rgba(255, 204, 153,30);")
-        if okPressed and token != '':
-            return name, token
-        else:
-            sys.exit(-1)
+        return name
 
     def course_dict(self):
         return self.course_dict
 
     @staticmethod
     def parse(self):
+        dotenv.load_dotenv(dotenv.find_dotenv())
+
         courses = []
         # Canvas API URL
         API_URL = "https://canvas.ubc.ca"
         # Canvas API key
-        API_KEY = Auth._token
+        API_KEY = os.environ.get('TOKEN')
         canvas = Canvas(API_URL, API_KEY)
 
         for course in canvas.get_courses():
@@ -207,17 +175,11 @@ class App(QDialog):
                 print(assignment.name())
                 print(assignment.due_date())
 
-            self.course_dict[course.name] = allSorted
-
-
+            self.course_dict[course] = allSorted
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-
-    # login = LoginDialog()
-    # if not login.exec_():  # user quit
-    #     sys.exit(-1)
 
     main = App()
 
