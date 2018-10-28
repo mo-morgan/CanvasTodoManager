@@ -100,14 +100,14 @@ class App(QDialog):
                                     "border-style: solid;"
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
-                                    "border-color: rgba(255, 204, 153,30);")
+                                    "border-image: url(FFCC99.png);")
         self.comboBox.setStyleSheet("margin: 10px; padding: 16%;"
                                     "background-color: rgb(255, 255, 255);"
                                     "color: rgba(0,0,0,1);"
                                     "border-style: solid;"
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
-                                    "border-color: rgba(255, 204, 153,30);")
+                                    "border-image: url(FFCC99.png);")
         self.setLayout(layout)
 
     def createStyle(self):
@@ -117,7 +117,7 @@ class App(QDialog):
                            "border-style: solid;"
                            "border-radius: 3px; "
                            "border-width: 0.5px;"
-                           "border-color: rgba(255, 204, 153,30);")
+                           "border-image: url(flower.jpg);")
 
     def clickBox(self, state):
         print(state)
