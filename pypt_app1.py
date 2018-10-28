@@ -23,8 +23,8 @@ class App(QDialog):
         print(name)
         print(token)
 
-        self.createLayout()
         self.createStyle()
+        self.createLayout()
 
         self.show()
 
@@ -51,18 +51,18 @@ class App(QDialog):
                                     "border-style: solid;"
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
-                                    "border-color: rgba(255, 204, 153,30);")
+                                    "border-image: url(FFCC99.png);")
         self.comboBox.setStyleSheet("margin: 10px; padding: 16%;"
                                     "background-color: rgb(255, 255, 255);"
                                     "color: rgba(0,0,0,1);"
                                     "border-style: solid;"
                                     "border-radius: 3px; "
                                     "border-width: 0.5px;"
-                                    "border-color: rgba(255, 204, 153,30);")
+                                    "border-image: url(FFCC99.png);")
         self.setLayout(layout)
 
     def createStyle(self):
-        self.setStyleSheet("border-image: url(leaf.jpg) 0 0 0 0 stretch stretch;"
+        self.setStyleSheet("border-image: url(flower.jpg);"
                            "margin: 1px; padding: 7px;"
                            "border-style: solid;"
                            "border-radius: 3px; "
