@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f425e1e2-e499-43e6-9af1-813469a3e18a" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="f425e1e2-e499-43e6-9af1-813469a3e18a" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/canvas_Todo_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canvas_Todo_manager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pypt_app1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pypt_app1.py" afterDir="false" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
+    </list>
+>>>>>>> 170b8f913f6d578b9ceffeafd37f71f4c092e36b
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,34 +29,34 @@
     <session id="-1394433495">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="py" value="3563" />
+          <entry key="py" value="3652" />
           <entry key="simple_input" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="3564" />
+          <entry key="Python" value="3653" />
         </counts>
       </usages-collector>
     </session>
@@ -90,10 +104,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="340">
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="129">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+=======
+            <state relative-caret-position="57">
+>>>>>>> 170b8f913f6d578b9ceffeafd37f71f4c092e36b
               <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
               <folding>
-                <element signature="e#24#52#0" expanded="true" />
+                <element signature="e#24#34#0" expanded="true" />
+                <marker date="1540696367853" expanded="true" signature="150:212" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pypt_app1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,18 +161,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/client/auth.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/canvasapi/course.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+=======
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
               <second_editor />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/auth.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -157,6 +200,7 @@
         <option value="$PROJECT_DIR$/client/auth.py" />
         <option value="$PROJECT_DIR$/simple_input.py" />
         <option value="$PROJECT_DIR$/MyAssignment.py" />
+        <option value="$PROJECT_DIR$/pypt_app1.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/client/logic.py" />
         <option value="$PROJECT_DIR$/logic.py" />
@@ -171,21 +215,48 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
+=======
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="12" />
+    <option name="y" value="20" />
+    <option name="width" value="1344" />
+    <option name="height" value="728" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> 170b8f913f6d578b9ceffeafd37f71f4c092e36b
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="canvas_Todo_manager" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="canvas_Todo_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="canvas_Todo_manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="CanvasTodoManager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,6 +273,7 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="Acer" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
             </path>
             <path>
               <item name="canvas_Todo_manager" type="b2602c69:ProjectViewProjectNode" />
@@ -241,7 +313,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,6 +342,9 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager">
+=======
   <component name="RunManager" selected="Python.pypt_app1">
     <configuration name="pypt_app1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="canvas_Todo_manager" />
@@ -294,6 +368,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
     <configuration name="simple_input" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="canvas_Todo_manager" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -316,10 +391,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
+=======
     <list>
       <item itemvalue="Python.simple_input" />
       <item itemvalue="Python.pypt_app1" />
     </list>
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
     <recent_temporary>
       <list>
         <item itemvalue="Python.pypt_app1" />
@@ -344,10 +422,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+=======
+<<<<<<< HEAD
+    <frame x="12" y="20" width="1344" height="728" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26168224" />
+=======
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11902834" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
+>>>>>>> 170b8f913f6d578b9ceffeafd37f71f4c092e36b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -360,9 +452,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13317756" side_tool="true" visible="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8668224" visible="true" weight="0.32996634" />
+=======
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28421053" side_tool="true" visible="true" weight="0.14234875" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.86315787" weight="0.2846975" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -394,14 +492,43 @@
     <entry file="file://$PROJECT_DIR$/MyAssignment.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/pypt_app1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+=======
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="129">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+=======
+        <state relative-caret-position="57">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+>>>>>>> 001867aaab21cbf610dbcf020786487962c3015e
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+            <marker date="1540696367853" expanded="true" signature="150:212" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 170b8f913f6d578b9ceffeafd37f71f4c092e36b
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1406319041/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
