@@ -1,5 +1,4 @@
 import sys
-# from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtWidgets import *
 
 class App(QDialog):
@@ -9,9 +8,9 @@ class App(QDialog):
         self.title = 'Canvas TODO Manager'
 
         self.left = 600
-        self.top = 110
-        self.width = 420
-        self.height = 700
+        self.top = 80
+        self.width = 600
+        self.height = 800
 
         self.initUI()
 
@@ -23,8 +22,8 @@ class App(QDialog):
         print(name)
         print(token)
 
-        self.createStyle()
         self.createLayout()
+        self.createStyle()
 
         self.show()
 
@@ -62,13 +61,12 @@ class App(QDialog):
         self.setLayout(layout)
 
     def createStyle(self):
-        self.setStyleSheet("margin: 1px; padding: 7px;"
-                           "background-color: rgba(255, 204, 153,0.8);"
-                           "color: rgba(0,0,0,100);"
+        self.setStyleSheet("border-image: url(leaf.jpg) 0 0 0 0 stretch stretch;"
+                           "margin: 1px; padding: 7px;"
                            "border-style: solid;"
                            "border-radius: 3px; "
                            "border-width: 0.5px;"
-                           "border-color: rgba(255, 204, 153,30);")
+                           "border-color: rgba(0, 0, 0,30);")
 
     def clickBox(self, state):
         print(state)
@@ -91,14 +89,7 @@ class App(QDialog):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
 
-    # login = LoginDialog()
-    # if not login.exec_():  # user quit
-    #     sys.exit(-1)
-
     main = App()
 
-    # get Name and token
-    # main.setName(login.username.text())
-    # main.setToken(login.accessToken.text())
     main.show()
     sys.exit(app.exec_())
