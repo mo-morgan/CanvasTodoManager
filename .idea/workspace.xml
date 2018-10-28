@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f425e1e2-e499-43e6-9af1-813469a3e18a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/canvas_Todo_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/canvas_Todo_manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pypt_app1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pypt_app1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/canvas_Todo_manager$pypt_app1.coverage" NAME="pypt_app1 Coverage Results" MODIFIED="1540750620640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/canvas_Todo_manager$pypt_app1.coverage" NAME="pypt_app1 Coverage Results" MODIFIED="1540751870943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1394433495">
@@ -77,13 +74,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="27" />
-          <entry key="py" value="1137" />
+          <entry key="py" value="1169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Python" value="1137" />
+          <entry key="Python" value="1169" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -95,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="340">
               <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="e#24#52#0" expanded="true" />
@@ -107,12 +104,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pypt_app1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+            <state relative-caret-position="86">
+              <caret line="111" column="38" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1540750620626" expanded="true" signature="124:974" ph="..." />
-                <marker date="1540750620626" expanded="true" signature="1473:1479" ph="..." />
+                <marker date="1540751617259" expanded="true" signature="128:1020" ph="..." />
+                <marker date="1540751617259" expanded="true" signature="1519:1525" ph="..." />
+                <marker date="1540751617259" expanded="true" signature="3797:3806" ph="..." />
               </folding>
             </state>
           </provider>
@@ -164,8 +162,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/client/logic.py" />
         <option value="$PROJECT_DIR$/logic.py" />
-        <option value="$PROJECT_DIR$/pypt_app1.py" />
         <option value="$PROJECT_DIR$/Ui_MainWindow.py" />
+        <option value="$PROJECT_DIR$/pypt_app1.py" />
       </list>
     </option>
   </component>
@@ -348,15 +346,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11902834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7157895" visible="true" weight="0.14234875" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.71500844" visible="true" weight="0.14440434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,7 +362,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28421053" side_tool="true" visible="true" weight="0.14234875" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28499156" side_tool="true" visible="true" weight="0.14440434" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.86315787" weight="0.2846975" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -406,16 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/1406319041/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -426,14 +414,25 @@
     <entry file="file://$PROJECT_DIR$/Ui_MainWindow.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pypt_app1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        <state relative-caret-position="86">
+          <caret line="111" column="38" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="38" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1540750620626" expanded="true" signature="124:974" ph="..." />
-            <marker date="1540750620626" expanded="true" signature="1473:1479" ph="..." />
+            <marker date="1540751617259" expanded="true" signature="128:1020" ph="..." />
+            <marker date="1540751617259" expanded="true" signature="1519:1525" ph="..." />
+            <marker date="1540751617259" expanded="true" signature="3797:3806" ph="..." />
           </folding>
         </state>
       </provider>

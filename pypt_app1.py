@@ -1,32 +1,32 @@
 import sys
-from PyQt5 import QtGui, QtCore, QtWidgets
+# from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtWidgets import *
 
 
-class LoginDialog (QtWidgets.QDialog):
-    def __init__(self, parent=None):
-        super(LoginDialog, self).__init__(parent)
-
-        self.username = QLineEdit()
-        self.accessToken = QLineEdit()
-        loginLayout = QFormLayout()
-        loginLayout.addRow("Name: ", self.username)
-        loginLayout.addRow("Access Token: ", self.accessToken)
-
-        self.buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
-        self.buttons.accepted.connect(self.check)
-        self.buttons.rejected.connect(self.reject)
-
-        layout = QVBoxLayout()
-        layout.addLayout(loginLayout)
-        layout.addWidget(self.buttons)
-        self.setLayout(layout)
-
-    def check(self):
-        if str(self.accessToken.text()) == "123":  # do actual login check
-            self.accept()
-        else:
-            pass  # or inform the user about bad username/password
+# class LoginDialog (QtWidgets.QDialog):
+#     def __init__(self, parent=None):
+#         super(LoginDialog, self).__init__(parent)
+#
+#         self.username = QLineEdit()
+#         self.accessToken = QLineEdit()
+#         loginLayout = QFormLayout()
+#         loginLayout.addRow("Name: ", self.username)
+#         loginLayout.addRow("Access Token: ", self.accessToken)
+#
+#         self.buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+#         self.buttons.accepted.connect(self.check)
+#         self.buttons.rejected.connect(self.reject)
+#
+#         layout = QVBoxLayout()
+#         layout.addLayout(loginLayout)
+#         layout.addWidget(self.buttons)
+#         self.setLayout(layout)
+#
+#     def check(self):
+#         if str(self.accessToken.text()) == "123":  # do actual login check
+#             self.accept()
+#         else:
+#             pass  # or inform the user about bad username/password
 
 
 class App(QDialog):
@@ -54,12 +54,12 @@ class App(QDialog):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
-        self.createStyle()
-        self.createLayout()
-
         name, token = self.getInfo()
         print(name)
         print(token)
+
+        self.createStyle()
+        self.createLayout()
 
         self.show()
 
@@ -113,6 +113,13 @@ class App(QDialog):
         token, okPressed = QInputDialog.getText(self, "Access Token", "Enter access token:", QLineEdit.Normal, "")
         if okPressed and token != '':
             print(token)
+        self.setStyleSheet("margin: 1px; padding: 7px;"
+                           "background-color: rgba(255, 204, 153,0.8);"
+                           "color: rgba(0,0,0,100);"
+                           "border-style: solid;"
+                           "border-radius: 3px; "
+                           "border-width: 0.5px;"
+                           "border-color: rgba(255, 204, 153,30);")
         return name, token
 
 
