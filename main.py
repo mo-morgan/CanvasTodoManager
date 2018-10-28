@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
+import os
+import dotenv
 from canvasapi import Canvas
 from datetime import datetime, timedelta
 
@@ -71,7 +73,7 @@ class App(QDialog):
         self.setWindowTitle(self.title)
         self.setGeometry(self.left, self.top, self.width, self.height)
 
-        Auth._name, Auth._token = self.getInfo()
+        Auth._name = self.getInfo()
         App.parse(self)
 
         self.createStyle()
@@ -156,9 +158,9 @@ class App(QDialog):
 
     def getInfo(self):
         name, okPressed = QInputDialog.getText(self, "User Login", "Your name:", QLineEdit.Normal, "")
-        token, okPressed = QInputDialog.getText(self, "Access Token", "Enter access token:", QLineEdit.Normal, "")
-        if okPressed and token != '':
-            print(token)
+        # token, okPressed = QInputDialog.getText(self, "Access Token", "Enter access token:", QLineEdit.Normal, "")
+        if okPressed != '':
+            print(name)
         self.setStyleSheet("margin: 1px; padding: 7px;"
                            "background-color: rgba(255, 204, 153,0.8);"
                            "color: rgba(0,0,0,100);"
@@ -166,21 +168,20 @@ class App(QDialog):
                            "border-radius: 3px; "
                            "border-width: 0.5px;"
                            "border-color: rgba(255, 204, 153,30);")
-        if okPressed and token != '':
-            return name, token
-        else:
-            sys.exit(-1)
+        return name
 
     def course_dict(self):
         return self.course_dict
 
     @staticmethod
     def parse(self):
+        dotenv.load_dotenv(dotenv.find_dotenv())
+
         courses = []
         # Canvas API URL
         API_URL = "https://canvas.ubc.ca"
         # Canvas API key
-        API_KEY = Auth._token
+        API_KEY = os.environ.get('TOKEN')
         canvas = Canvas(API_URL, API_KEY)
 
         for course in canvas.get_courses():
