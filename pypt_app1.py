@@ -76,15 +76,10 @@ class App(QDialog):
         name, okPressed = QInputDialog.getText(self, "User Login", "Your name:", QLineEdit.Normal, "")
         token, okPressed = QInputDialog.getText(self, "Access Token", "Enter access token:", QLineEdit.Normal, "")
         if okPressed and token != '':
-            print(token)
-        self.setStyleSheet("margin: 1px; padding: 7px;"
-                           "background-color: rgba(255, 204, 153,0.8);"
-                           "color: rgba(0,0,0,100);"
-                           "border-style: solid;"
-                           "border-radius: 3px; "
-                           "border-width: 0.5px;"
-                           "border-color: rgba(255, 204, 153,30);")
-        return name, token
+            return name, token
+        else:
+            sys.exit(-1)
+
 
 
 if __name__ == '__main__':
