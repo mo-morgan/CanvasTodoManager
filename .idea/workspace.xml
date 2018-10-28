@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f425e1e2-e499-43e6-9af1-813469a3e18a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pypt_app1.py" beforeDir="false" afterPath="$PROJECT_DIR$/pypt_app1.py" afterDir="false" />
-    </list>
+    <list default="true" id="f425e1e2-e499-43e6-9af1-813469a3e18a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pypt_app1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="111" column="38" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="38" />
+            <state relative-caret-position="264">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <marker date="1540751617259" expanded="true" signature="128:1020" ph="..." />
@@ -173,7 +171,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="949" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
@@ -346,7 +344,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="633" y="0" width="653" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
@@ -354,7 +352,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49959514" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.71500844" visible="true" weight="0.14440434" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7157895" visible="true" weight="0.14234875" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,7 +360,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28499156" side_tool="true" visible="true" weight="0.14440434" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28421053" side_tool="true" visible="true" weight="0.14234875" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.86315787" weight="0.2846975" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -426,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pypt_app1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="111" column="38" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="38" />
+        <state relative-caret-position="264">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <marker date="1540751617259" expanded="true" signature="128:1020" ph="..." />
