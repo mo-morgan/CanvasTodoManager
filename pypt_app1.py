@@ -2,33 +2,6 @@ import sys
 # from PyQt5 import QtGui, QtCore, QtWidgets
 from PyQt5.QtWidgets import *
 
-
-# class LoginDialog (QtWidgets.QDialog):
-#     def __init__(self, parent=None):
-#         super(LoginDialog, self).__init__(parent)
-#
-#         self.username = QLineEdit()
-#         self.accessToken = QLineEdit()
-#         loginLayout = QFormLayout()
-#         loginLayout.addRow("Name: ", self.username)
-#         loginLayout.addRow("Access Token: ", self.accessToken)
-#
-#         self.buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
-#         self.buttons.accepted.connect(self.check)
-#         self.buttons.rejected.connect(self.reject)
-#
-#         layout = QVBoxLayout()
-#         layout.addLayout(loginLayout)
-#         layout.addWidget(self.buttons)
-#         self.setLayout(layout)
-#
-#     def check(self):
-#         if str(self.accessToken.text()) == "123":  # do actual login check
-#             self.accept()
-#         else:
-#             pass  # or inform the user about bad username/password
-
-
 class App(QDialog):
 
     def __init__(self):
@@ -41,14 +14,6 @@ class App(QDialog):
         self.height = 700
 
         self.initUI()
-
-    # def setName(self, username):
-    #     self.username = username
-    #     # print("Username entered: %s" % self.username.text)
-    #
-    # def setToken(self, token):
-    #     self.accessToken = token
-    #     # print("Token: %s" % self.accessToken.text)
 
     def initUI(self):
         self.setWindowTitle(self.title)
