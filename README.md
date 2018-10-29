@@ -11,7 +11,9 @@ As part of the Canvas guidelines, please do not share your token with anyone
 # Installation Steps:
 1. Clone the repository
 2. Create a .env file with the following information:  
-export TOKEN=<Your authorization token here>
+export TOKEN=\<Your authorization token here\>
 3. Run main.py
   
 Optional: You can build main.py with a python module such as PyInstaller
+
+Canvas API: https://github.com/ucfopen/canvasapi
